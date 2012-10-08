@@ -1,0 +1,276 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+%\usepackage[T1]{fontenc}
+%\usepackage[sc,osf]{mathpazo}
+
+\usepackage[resetlabels]{multibib}
+
+% Set your name here
+\def\name{Matthew R. Terry}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{%
+  colorlinks = false,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {plasma physics, computational physics, python},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\scshape\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+\newcites{%
+	ref,%
+	invtalk,%
+	proc,%
+	thesis%
+	}{%
+	Refereed Journals,%
+	Invited Talks,%
+	Conference Proceedings,%
+	Ph.D. Thesis%
+}
+
+\begin{document}
+
+\begin{center}
+	{\huge\scshape \name}
+
+	\textit{%
+		2223 Bonar St. Apt E $\bullet$
+		Berkeley, CA 94702 $\bullet$
+		608.658.4316 $\bullet$
+		\href{mailto:matt.terry@gmail.com}{matt.terry@gmail.com}
+	}
+\end{center}
+
+%\section*{Objective}
+%\hrule
+%\vspace{0.05in}
+%I am seeking a position involving the application of computational tools in the analysis and solution of scientific or technical problems.
+
+\section*{Personal Information}
+\hrule
+\vspace{0.05in}
+\begin{itemize}
+	\item United States Citizen
+	\item US Department of Energy ``Q'' Clearance
+\end{itemize}
+
+
+\section*{Educational Background}
+\hrule
+\vspace{0.05in}
+\begin{itemize}
+	\item 
+		\textbf{University of Wisconsin-Madison} \\
+		Ph.D. Nuclear Engineering (Est 2010) \\
+  		Thesis: Effect of Different Charged Particle Stopping Power Models on ICF Ignition \\
+		Advisor: Gregory A. Moses
+	\item 
+		\textbf{University of Wisconsin-Madison} \\
+		M.S. Nuclear Engineering \\
+		Graduated May 2006, 3.53 GPA 
+	\item 
+		\textbf{Georgia Institute of Technology} \\
+		B.S. Nuclear and Radiological Engineering with Honors \\
+		Graduated May 2004, 3.77 GPA
+\end{itemize}
+
+
+%\section*{Employment}
+%\begin{itemize}
+%\end{itemize}
+
+
+\section*{Publications}
+\hrule
+\vspace{0.05in}
+
+% Referreed papers
+\nociteref{Stacey2005}
+\nociteref{Koning2011}
+
+% Invited Talks
+\nociteinvtalk{Terry2012a}
+
+% Thesis
+\nocitethesis{Terry2010}
+
+% Conference Proceedings
+\nociteproc{Terry2012}
+\nociteproc{Terry2011}
+\nociteproc{Terry2010a}
+\nociteproc{Terry2009}
+
+
+\bibliographystyleref{plainyr-rev}
+\bibliographyref{/Users/terry10/doc/latex_files/library}
+
+\bibliographystyleinvtalk{plainyr-rev}
+\bibliographyinvtalk{/Users/terry10/doc/latex_files/library}
+
+\bibliographystylethesis{plainyr-rev}
+\bibliographythesis{/Users/terry10/doc/latex_files/library}
+
+\bibliographystyleproc{plainyr-rev}
+\bibliographyproc{/Users/terry10/doc/latex_files/library}
+
+
+%\begin{itemize}
+%    \item ``Sensitivity of Thermonuclear Burn to Charged Particle Stopping Power Models in NIF-like Targets,''  Bull.\ of Am. Phys Soc., Vol. 54 No. 15, 82 (2009)
+%    \item ``Hierarchy of Stopping Powers,'' Omega Users Group Workshop, (2009)
+%    \item ``Sensitivity Study of Stopping Powers Models in ICF Targets,'' Bull.\ of Am. Phys Soc., Vol. 53, No. 14 (2008)
+%    \item ``Modeling of Omega Thinshell Experiments,'' Bull.\ of Am. Phys. Soc., Vol. 49 No. 8, 279 (2004)
+%    \item ``A Subcritical, Gas-Cooled Fast Transmutation Reactor with a Fusion Neutron Source,'' Nuclear Technology, Vol. 150, No. 2, 162 (2005)
+%\end{itemize}
+
+
+\section*{Technical Experience}
+\hrule
+\vspace{0.05in}
+
+\subsection*{Post-Doctoral Research}
+pass
+
+\subsection*{Ph.D. Research}
+My Ph.D. research studied the effect of different charged particle stopping
+power models on the performance of inertial confinement fusion (ICF) targets.
+Much work went into the development of a library (``Deeks'') that implements
+many different models and does extensive consistency checking between the model
+and the conditions to which it is applied.  This library has been integrated
+into the pre-existing time dependent charged particle tracking (a Monte
+Carlo-like transport scheme) package in an existing multi-physics code
+(``Bucky'').  The integration allows me to examine the effect of different
+transport models in integrated realistic simulations.
+
+\vspace{0.1in}
+
+More specifically, my research involves studying the effect collision operators have on transport properties of the plasma.  Due to the particularly high densities of ICF plasmas, this requires a careful, combined treatment of both the collisional and dielectric properties of the plasma, that is use of so-called ``convergent'' kinetic theories.  I have implemented stopping power models by 
+Landau; 
+Spitzer; 
+Jackson; 
+Brysk; 
+Skupsky; 
+Kihara and Aono; 
+May and Cramer; 
+Li and Petrasso; 
+and 
+Brown, Preston, and Singleton%
+.
+In my own research, I have derived and implemented Fermi-degenerate extensions of the Landau and Li and Petrasso models.  I am currently composing papers for publication on my Fermi-degenerate extension work and another on my analysis of the applicability of existing stopping power models in ICF ignition experiments.  
+
+
+\subsection*{Software Development}
+The computing aspect of my Ph.D. research required the integration of a library
+written in C++ (Deeks) with an existing Fortran program (Bucky).  Data analysis
+in compiled languages is overly time intensive, so I developed Python
+interfaces to both codes.  The flexibility provided by the Python interface
+enabled the rapid development of an automatic shock tuner for Bucky.  The tuner
+completely automates a previously labor and analysis intensive process.  What
+once took a week, can now be accomplished in hours.
+
+\subsection*{Undergraduate Research at LLNL}
+\begin{itemize}
+	\item Summers 2003, 2004 - Worked with Ogden Jones on the analysis of ICF thinshell symmetry experiments using view-factor codes and radiation hydrodynamics code Hydra.
+	\item Summer 2002 -  Worked with Dmitri Ryutov on magnetic islands in SSPX
+\end{itemize}
+
+\subsection*{Professional Societies}
+\begin{itemize}
+	\item The American Physical Society
+\end{itemize}
+
+\pagebreak
+
+\section*{Techincal Leadership}
+\hrule
+\vspace{0.05in}
+
+\subsection*{Scientific Programming in Python Program Committee}
+The Program Commitee for the Scientific Programming in Python Conference is
+responsible for reviewing and selecting talks from submitted proposals.
+Committee is also responsible for reviewing submitted papers submitted to the
+conference proceedings.
+
+\subsection*{The Hacker Within}
+The Hacker Within THW is a student-led, skill sharing interest group for
+scientific software development.  It was founded in 2008 by two colleagues and
+myself.  We hold bi-weekly meetings and hold occasional ``boot camps,'' highly
+focused multi-day workshops.  Our most recent boot camp on the Python
+programming language (\url{http://python.hackerwithin.org}) had more than 70
+attendees from 20 departments and included more than 18 hours of instruction.
+In addition to organization, I was responsible for teaching the sessions
+``Modules, Scripts, Packages and Classes,''  ``Graphing with MatPlotLib,''
+``Extending python with C/C++ using SWIG,''  and ``Batteries Included - The
+Python Standard Library.''  The Hacker Within collaborates with
+\href{software-carpentry.org}{Software Carpentry} to teach THW-style workshops
+at universities and laboratories across the US and Europe.
+
+\section*{Community Leadership}
+\hrule
+\vspace{0.05in}
+\subsection*{The Journey Community Church Council}
+From 2009-2010, I was been one of 5 members of The Journey Community's Church
+Council.  Members of the council, are responsible for overseeing the church's
+finances.  They are responsible for setting the  budget for the church and
+making financial decisions for the church.  Additionally, they oversee the
+finances of \href{http://www.beautifulchild.org}{Beautiful Child}, a charity
+that sponsors an orphanage in Jacmel, Haiti.
+
+\subsection*{Jumptown}
+From 2002-2004 I was president of a swing dancing club.  I was responsible for
+organizing weekly classes, monthly dances and semesterly workshops.  Under my
+supervision the club grew from about 20 people to more than 100 and oversaw a
+budget of several thousand dollars.
+
+\section*{Awards}
+\hrule
+\vspace{0.05in}
+\begin{itemize}
+	\item National Physical Sciences Consortium Fellowship in conjunction with Sandia National Laboratories 2007-2010
+	\item James Poukey Fellowship 2006
+	\item National Academy for Nuclear Training Scholarship 2002-2004
+	\item American Nuclear Society Scholarship 2002-2003
+\end{itemize}
+
+\bigskip
+
+\end{document}
