@@ -58,11 +58,13 @@
 
 \newcites{%
 	ref,%
+	refproc,%
 	invtalk,%
 	proc,%
 	thesis%
 	}{%
 	Refereed Journals,%
+	Refereed Conference Proceedings,%
 	Invited Talks,%
 	Conference Proceedings,%
 	Ph.D. Thesis%
@@ -125,8 +127,11 @@
 \vspace{0.05in}
 
 % Referreed papers
+\nociteref{Terry2012b}
 \nociteref{Stacey2005}
-\nociteref{Koning2011}
+
+% Referreed proceedings
+\nociterefproc{Koning2011}
 
 % Invited Talks
 \nociteinvtalk{Terry2012a}
@@ -138,11 +143,16 @@
 \nociteproc{Terry2012}
 \nociteproc{Terry2011}
 \nociteproc{Terry2010a}
+% OLUG
 \nociteproc{Terry2009}
+\nociteproc{Terry2004}
 
 
 \bibliographystyleref{plainyr-rev}
 \bibliographyref{/Users/terry10/doc/latex_files/library}
+
+\bibliographystylerefproc{plainyr-rev}
+\bibliographyrefproc{/Users/terry10/doc/latex_files/library}
 
 \bibliographystyleinvtalk{plainyr-rev}
 \bibliographyinvtalk{/Users/terry10/doc/latex_files/library}
