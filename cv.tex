@@ -9,10 +9,11 @@
 % this notice and the above URL in the source code if you choose to
 % redistribute this file.
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{hyperref}
 \usepackage{geometry}
+\usepackage{amsmath}
 
 % Comment the following lines to use the default Computer Modern font
 % instead of the Palatino font provided by the mathpazo package.
@@ -85,22 +86,30 @@
 
 \section*{Objective}
 \hrule
-\vspace{0.05in}
-I am seeking a position involving the application of computational tools in the analysis and solution of scientific and technical problems.
+\vspace{0.07in}
+I am seeking opportunities to study and teach scientific analysis and problems
+solving, particularly computational approaches.  My scientific interests are in
+high energy density physics, fusion, nuclear systems, energy, and numerical
+optimization.
 
-\section*{Personal Information}
-\hrule
-\vspace{0.05in}
-\begin{itemize}
-	\item United States Citizen
-	\item US Department of Energy ``Q'' Clearance
-\end{itemize}
+%\section*{Personal Information}
+%\hrule
+%\vspace{0.07in}
+%\begin{itemize}
+%    \item United States Citizen
+%    \item US Department of Energy ``Q'' Clearance
+%\end{itemize}
 
 
 \section*{Education}
 \hrule
-\vspace{0.05in}
+\vspace{0.07in}
 \begin{itemize}
+	\item
+		\textbf{Lawrence Livermore National Laboratory} \\
+		Post-doctoral research \\
+		High Energy Physics Target Design \\
+		Advisors: L. John Perkins, John J. Barnard, Alex Friedman
 	\item 
 		\textbf{University of Wisconsin-Madison} \\
 		Ph.D. Nuclear Engineering \\
@@ -117,16 +126,135 @@ I am seeking a position involving the application of computational tools in the 
 \end{itemize}
 
 
-%\section*{Employment}
-%\begin{itemize}
-%\end{itemize}
+\section*{Teaching Experience}
+\hrule
+\vspace{0.07in}
 
+\subsection*{The Hacker Within}
+The Hacker Within (THW) is a student-led, skill sharing interest group for
+scientific software development.  It was founded in 2008 by two colleagues and
+myself.  THW holds regular meetings organized around discussion of software
+development.  I personally contributed talks on build systems (CMake), version
+control (Subversion, Mercurial), text editors (VIM), and many Python-related
+topics.
+
+\vspace{0.1in}
+
+THW also hosts occasional highly focused multi-day ``boot camp'' workshops. I
+helped organize and teach boot camps on Unix literacy, C++, and Python in 2008,
+2009, and 2010.  The Python boot camp, in particular, had more than 70 attendees
+from 20 departments and included more than 18 hours of instruction.  In
+addition to organization, I was responsible for teaching the sessions
+``Modules, Scripts, Packages and Classes,''  ``Graphing with MatPlotLib,''
+``Extending Python with C/C++ using SWIG,''  and ``Batteries Included - The
+Python Standard Library.''
+
+\subsection*{Software Carpentry}
+Software Carpentry seeks to make scientists more effective by teaching them
+basic computing skills.  They have adopted the THW-style boot camp teaching
+methodology and have, over the past two years, taught over 50 workshops in the
+US, Canada, and Europe.  I have assisted with several Software Carpentry
+workshops at UC-Berkeley and Lawrence Berkeley Laboratory.  I am currently
+participating in a Software Carpentry instructor training course covering the
+academic literature on effective software development practice and techniques
+for effective computing instruction.
+
+\subsection*{Engineering Problem Solving}
+At the University of Wisconsin-Madison, I was a Teaching Assistant for NE 271:
+Engineering Problem Solving.  This laboratory course covers the solution of engineering
+problems using commercially-available software tools (spreadsheets, symbolic
+manipulators, and equation solvers). The emphasis of the course is on nuclear
+engineering problems, including radioactive decay, nuclear cross sections,
+scattering, and criticality.  In this freshmen-level class, I was responsible
+for guiding the in-class exercises as well as real-time debugging of students'
+programming errors and computing misconceptions.
+
+
+\section*{Scientific Research}
+\hrule
+\vspace{0.07in}
+
+\subsection*{Post-Doctoral Research}
+My post-doctoral research has focused on understanding the physics of objects
+subjected to extremely high power ($10^{14}$ W), high intensity ($10^{15}
+\text{W}/\text{cm}^2$) laser and particle beams.  My research in the field of
+high energy density physics has focused on two broad topics: design of systems
+oriented at producing laboratory thermonuclear fusion, and design and analysis
+of materials science experiments involving metals at high pressure ($10^5$ - $5
+\cdot 10^6$ times atmospheric pressure).
+
+\vspace{0.1in}
+
+My fusion efforts have all occurred in the field of inertial confinement
+fusion (ICF), a potential means of energy production that uses
+micro-explosions to produce conditions with densities 100,000 times solid
+density and temperatures in excess of $10^8$ K.  I developed a shock ignition
+target compatible with ``day one'' hardware on the recently completed National
+Ignition Facility (NIF) in Livermore, CA\@.  The design includes an assessment
+of energetics, hydrodynamic stability, and performance degradation due to
+experimental jitter and hot electrons.
+
+\vspace{0.1in}
+
+Additionally, I developed another ICF concept that uses directly incident ion
+beams to drive an ICF implosion.  This design makes use of the long range
+deposition of heavy ion beams and uses tamped ablation to achieve high
+efficiency.  My work has progressed into the design of laser driven
+hydrodynamics experiments that test the physics of shear flow
+relevant to the recently developed X-target ICF concept.
+
+\vspace{0.1in}
+
+My work in materials science experiments focuses on developing
+experiments on two high power laser systems: NIF (Livermore, CA) and Omega
+(Rochester, NY).  These experiments are intended to measure the material
+properties of metals under high pressure ($10^5 - 5 \cdot 10^6$ times atmospheric
+pressure).  I have helped design, specify, and analyze successful
+experiments over a broad range of conditions.  Experiments include:
+\begin{itemize}
+	\item measurement of the crystalline structure of thin (5 micron)
+		Tantalum foils while subjected to 300 kBar shocks
+	\item testing of a high energy (22 keV) silver x-ray backlighter intended for
+		radiography of Tantalum under high pressure (~5 MBar)
+	\item measurement of the growth of Rayleigh-Taylor unstable
+		perturbations subject to a ramped pressure drive
+\end{itemize}
+
+
+\subsection*{Ph.D. Research}
+My Ph.D. research studied the effect of different charged particle stopping
+power models on the performance of inertial confinement fusion (ICF) targets.
+Much work went into the development of a library (``Deeks'') that implements
+many different models and does extensive consistency checking between the model
+and the conditions to which it is applied.  This library has been incorporated
+into the pre-existing time dependent charged particle tracking package (a Monte
+Carlo-like transport scheme) in an existing multi-physics code (``Bucky'').
+This allows me to examine the effect of different transport models
+in integrated realistic simulations.
+
+\vspace{0.1in}
+
+More specifically, my research involved studying the effect that collision operators have on transport properties of the plasma.  Due to the particularly high densities of ICF plasmas, this requires a careful, combined treatment of both the collisional and dielectric properties of the plasma.  One effective treatment is the use of so-called ``convergent'' kinetic theories that carefully cancel opposing divergences in collisional and dielectric treatments.  I have implemented stopping power models by 
+Landau; 
+Spitzer; 
+Jackson; 
+Brysk; 
+Skupsky; 
+Kihara and Aono; 
+May and Cramer; 
+Li and Petrasso; 
+and 
+Brown, Preston, and Singleton%
+.
+In my own research, I have derived and implemented Fermi-degenerate extensions of the Landau and Li and Petrasso models.  
+%I am currently composing papers for publication on my Fermi-degenerate extension work and another on my analysis of the applicability of existing stopping power models in ICF ignition experiments.  
 
 \section*{Publications}
 \hrule
-\vspace{0.05in}
+\vspace{0.07in}
 
 % Referreed papers
+\nociteref{Barnard2013}
 \nociteref{Terry2012b}
 \nociteref{Stacey2005}
 
@@ -164,67 +292,9 @@ I am seeking a position involving the application of computational tools in the 
 \bibliographystyleproc{plainyr-rev}
 \bibliographyproc{/Users/terry10/doc/latex_files/library}
 
-
-\section*{Technical Experience}
+\section*{Relevant Skills and Experience}
 \hrule
-\vspace{0.05in}
-
-\subsection*{Post-Doctoral Research}
-My post-doctoral research has focused on the design of novel inertial
-confinement fusion targets and on designing high energy density physics
-experiments.  I developed a shock ignition target compatible with ``day one''
-hardware on the recently completed National Ignition Facility (NIF) in
-Livermore, CA.
-
-I developed a direct drive heavy ion driven ignition target that makes use of a
-long range heavy ion deposition and tamped ablation to achieve high drive
-efficiency.  Additional work has expended into the design of laser driven
-hydrodynamics experiments intended to test the physics of the ion driven
-X-target.
-
-My current research activities have focused on developing high power laser
-experiments on two high power laser systems: NIF (Livermore, CA) and Omega
-(Rochester, NY).  These experiments are intended to measure the material
-properties of metals under high pressure ($10^5 - 5 10^6$ times atmospheric
-pressure).  Specifically, I have helped design, specify, and analyze successful
-experiments over a broad range of conditions.  Experiments include:
-\begin{enumerate}
-	\item the measurements of the crystalline structure of thin (5 micron)
-		Tantalum foils while subjected to 300 kBar shocks
-	\item testing of a high energy (22 keV) silver x-ray backlighter intended for
-		radiography of Tantalum under high pressure (~5 MBar)
-	\item the measurement of the growth of Rayleigh-Taylor unstable
-		perturbations subject to a ramped pressure drive
-\end{enumerate}
-
-
-\subsection*{Ph.D. Research}
-My Ph.D. research studied the effect of different charged particle stopping
-power models on the performance of inertial confinement fusion (ICF) targets.
-Much work went into the development of a library (``Deeks'') that implements
-many different models and does extensive consistency checking between the model
-and the conditions to which it is applied.  This library has been integrated
-into the pre-existing time dependent charged particle tracking (a Monte
-Carlo-like transport scheme) package in an existing multi-physics code
-(``Bucky'').  The integration allows me to examine the effect of different
-transport models in integrated realistic simulations.
-
-\vspace{0.1in}
-
-More specifically, my research involves studying the effect collision operators have on transport properties of the plasma.  Due to the particularly high densities of ICF plasmas, this requires a careful, combined treatment of both the collisional and dielectric properties of the plasma, that is use of so-called ``convergent'' kinetic theories.  I have implemented stopping power models by 
-Landau; 
-Spitzer; 
-Jackson; 
-Brysk; 
-Skupsky; 
-Kihara and Aono; 
-May and Cramer; 
-Li and Petrasso; 
-and 
-Brown, Preston, and Singleton%
-.
-In my own research, I have derived and implemented Fermi-degenerate extensions of the Landau and Li and Petrasso models.  I am currently composing papers for publication on my Fermi-degenerate extension work and another on my analysis of the applicability of existing stopping power models in ICF ignition experiments.  
-
+\vspace{0.07in}
 
 \subsection*{Software Development}
 Over the course of my research, I have developed a significant amount of
@@ -242,26 +312,11 @@ enabled the rapid development of an automatic shock tuner for Bucky.  The tuner
 completely automates a previously labor and analysis intensive process.  What
 once took a week, can now be accomplished in hours.
 
-\subsection*{Undergraduate Research at LLNL}
-\begin{itemize}
-	\item Summers 2003, 2004 - Worked with Ogden Jones on the analysis of ICF thinshell symmetry experiments using view-factor codes and radiation hydrodynamics code Hydra.
-	\item Summer 2002 -  Worked with Dmitri Ryutov on magnetic islands in SSPX
-\end{itemize}
 
-\subsection*{Professional Societies}
-\begin{itemize}
-	\item The American Physical Society
-\end{itemize}
-
-\pagebreak
-
-\section*{Technical Leadership}
-\hrule
-\vspace{0.05in}
-\subsection*{Propsal Writing}
+\subsection*{Grant and Proposal Writing}
 I am the LLNL Primary Investigator for a 3-year, \$6M proposal the US DoE
 Office of Science to.  The proposal seeks funding to  experimentally investigate
-the physics of shock reflection and the evolution of the Kelvin-Hemholtz
+the physics of shock reflection and the evolution of the Kelvin-Helmholtz
 instability in conditions relevant to an ion driven fusion energy target
 design.  If funded, I would be responsible for directing as \$1.1M in funds
 over three years and managing a group of senior research scientists.  The
@@ -269,29 +324,14 @@ proposal is in collaboration with scientists at Lawrence Berkeley National
 Laboratory, Lawrence Livermore National Laboratory, and the Princeton Plasma
 Physics Laboratory.
 
+
 \subsection*{Scientific Programming in Python Program Committee 2012-2013}
 The Program Committee for the Scientific Programming in Python Conference is
 responsible for reviewing and selecting talks from submitted proposals.
 Committee is also responsible for reviewing submitted papers submitted to the
 conference proceedings.
 
-\subsection*{The Hacker Within 2008-2011, Software Carpentry 2012-present}
-The Hacker Within (THW) is a student-led, skill sharing interest group for
-scientific software development.  It was founded in 2008 by two colleagues and
-myself.  We hold bi-weekly meetings and hold occasional ``boot camps,'' highly
-focused multi-day workshops.  Our most recent boot camp on the Python
-programming language (\url{http://python.hackerwithin.org}) had more than 70
-attendees from 20 departments and included more than 18 hours of instruction.
-In addition to organization, I was responsible for teaching the sessions
-``Modules, Scripts, Packages and Classes,''  ``Graphing with MatPlotLib,''
-``Extending python with C/C++ using SWIG,''  and ``Batteries Included - The
-Python Standard Library.''  The Hacker Within collaborates with
-\href{software-carpentry.org}{Software Carpentry} to teach THW-style workshops
-at universities and laboratories across the US and Europe.
 
-\section*{Community Leadership}
-\hrule
-\vspace{0.05in}
 \subsection*{The Journey Community Church Council}
 From 2009-2010, I was been one of 5 members of The Journey Community's Church
 Council.  Members of the council, are responsible for overseeing the church's
@@ -300,15 +340,14 @@ making financial decisions for the church.  Additionally, they oversee the
 finances of \href{http://www.beautifulchild.org}{Beautiful Child}, a charity
 that sponsors an orphanage in Jacmel, Haiti.
 
-\subsection*{Jumptown}
-From 2002-2004 I was president of a swing dancing club.  I was responsible for
-organizing weekly classes, monthly dances and semesterly workshops.  Under my
-supervision the club grew from about 20 people to more than 100 and oversaw a
-budget of several thousand dollars.
 
-\section*{Awards}
-\hrule
-\vspace{0.05in}
+\subsection*{Professional Societies}
+\begin{itemize}
+	\item The American Physical Society
+	\item NumFocus
+\end{itemize}
+
+\subsection*{Awards}
 \begin{itemize}
 	\item National Physical Sciences Consortium Fellowship in conjunction with Sandia National Laboratories 2007-2010
 	\item James Poukey Fellowship 2006
@@ -316,6 +355,19 @@ budget of several thousand dollars.
 	\item American Nuclear Society Scholarship 2002-2003
 \end{itemize}
 
-\bigskip
+\subsection*{Undergraduate Research at LLNL}
+\begin{itemize}
+	\item Summers 2003, 2004 - Worked with Ogden Jones on the analysis of ICF thinshell symmetry experiments using view-factor codes and radiation hydrodynamics code Hydra.
+	\item Summer 2002 -  Worked with Dmitri Ryutov on magnetic islands in
+		LLNL's Sustained Spheromak Physics eXperiment (SSPX).
+\end{itemize}
+
+
+\subsection*{Jumptown}
+From 2002-2004 I was president of a swing dancing club in Madison, WI.  I was
+responsible for organizing weekly classes, monthly dances and semesterly
+workshops.  Under my supervision the club grew from about 20 people to more
+than 100 and oversaw a budget of several thousand dollars.
+
 
 \end{document}
