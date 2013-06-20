@@ -59,320 +59,150 @@
 
 \newcites{%
 	ref,%
-	refproc,%
-	invtalk,%
-	proc,%
-	thesis%
+	invtalk%
 	}{%
 	Refereed Journals,%
-	Refereed Conference Proceedings,%
-	Invited Talks,%
-	Conference Proceedings,%
-	Ph.D. Thesis%
+	Invited Talks%
 }
+
+\newcommand{\sectionline}{\vspace{-0.05in}\hrule\vspace{0.05in}}
+\setlength{\parskip}{0.3em}
+
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0em}{1em}{0.5em}
+
 
 \begin{document}
 
 \begin{center}
 	{\huge\scshape \name}
 
-	\textit{%
-		1612 Parker St. Apt D $\bullet$
-		Berkeley, CA 94703 $\bullet$
-		608.658.4316 $\bullet$
-		\href{mailto:me@mattterry.net}{me@mattterry.net}
-	}
+	1612 Parker St. Apt D $\bullet$
+	Berkeley, CA 94703 $\bullet$
+	608.658.4316 $\bullet$
+	\href{mailto:me@mattterry.net}{me@mattterry.net}
 \end{center}
 
 \section*{Objective}
-\hrule
-\vspace{0.05in}
-I am seeking a position involving the application of computational tools in the analysis and solution of scientific and technical problems.
-
-\section*{Personal Information}
-\hrule
-\vspace{0.05in}
-\begin{itemize}
-	\item United States Citizen
-	\item US Department of Energy ``Q'' Clearance
-\end{itemize}
-
+\sectionline
+I am seeking a position employing computational tools in the analysis and
+solution of scientific and technical problems.  I am a US citizen and currently
+hold a Department of Energy ``Q'' clearance.
 
 \section*{Education and Training}
-\hrule
-\vspace{0.05in}
+\sectionline
 \begin{itemize}
 	\item
-		\textbf{Lawrence Livermore National Laboratory} \\
-		Post-doctoral research \\
-		Fusion Energy Program \\
-		Advisors: L. John Perkins, John J. Barnard, Alex Friedman
+		\textbf{Lawrence Livermore National Laboratory} Post-docoral research, 2010-present \\
+		Inertial Fusion and High Energy Density Physics Target Design
 	\item 
-		\textbf{University of Wisconsin-Madison} \\
-		Ph.D. Nuclear Engineering \\
-  		Thesis: Effect of Different Charged Particle Stopping Power Models on ICF Ignition \\
-		Advisor: Gregory A. Moses
+		\textbf{University of Wisconsin-Madison} Ph.D. Nuclear Engineering, 2010 \\
+		``Effect of Different Charged Particle Stopping Power Models on ICF Ignition''
 	\item 
-		\textbf{University of Wisconsin-Madison} \\
-		M.S. Nuclear Engineering \\
-		Graduated May 2006, 3.53 GPA 
+		\textbf{University of Wisconsin-Madison} M.S. Nuclear Engineering, 2006
 	\item 
-		\textbf{Georgia Institute of Technology} \\
-		B.S. Nuclear and Radiological Engineering with Honors \\
-		Graduated May 2004, 3.77 GPA
+		\textbf{Georgia Institute of Technology} B.S. Nuclear and Radiological Engineering, 2004
 \end{itemize}
 
 
-%\section*{Employment}
-%\begin{itemize}
-%\end{itemize}
 
+\section*{Computational Physicist Engineer}
+\sectionline
+I am by temperament an engineer, by training a physicist, and by practice a
+software developer.  For the last 9 years, my research has focused on using
+practical
+computational methods to model and understand the behavior of high energy
+density plasmas, that is, ionized matter with pressure greater than $>10^6$ time atmospheric
+pressure and temperatures exceeding $10^4$K.  I have studied in detail, shock hydrodynamics,
+fusion burn kinetics, and inertial fusion design.
+
+Intrinsic to my scientific research is the development of software.  Among my
+software projects I have:
+\begin{enumerate}
+	\item Developed Monte Carlo charged particle transport packages for two
+		radiation hydrodynamics codes ``Bucky'' and ``Draco''.  These were
+		developed to study the physics of fusion burn kinetics in high density
+		plasmas.
+	\item Developed a platform to automate the design of certain aspect of an
+		inertial fusion target design.  It uses parallel optimization
+		techniques to optimize laser timing and intensity features.  In
+		practice, multiple-day exercise are replaced by a single 4 hour batch
+		job.
+\end{enumerate}
+
+I am conversant in numerical methods for solving partial differential.
+I have significant experience with Lagrangian hydrodynamics, Monte Carlo
+solutions to the Boltzmann Equation, and compatible finite different
+methods.  I am interested in large scale numerical
+optimization, especially techniques using concurrent function evaluations.
+
+
+\section*{High Performance Python Expert}
+\sectionline
+I have been developing scientific software for more than a decade and Python
+for nearly 9 years.  I have experience running Python in parallel environments
+on large computing clusters and am comfortable processing ``big data''.  My
+scientific analysis tools are all developed in Python and make extensive use of
+the NumPy/SciPy ecosystem as well as interfacing with external code/libraries
+when appropriate.  I have extensive experience developing convenient Python
+interfaces to high performance, compiled libraries using tools such as Cython,
+f2py, and SWIG.
+
+Among my Python projects I have:
+\begin{enumerate}
+	\item Developed an analysis library for pre-processing, post-processing,
+		and embedded steering of the radiation-hydrodynamics program HYDRA.
+	\item Currently developing a program ``Yoink'' to reverse-engineering data
+		from scientific figures.
+	\item Converted a rigid legacy Fortran program to a script-able
+		Python-based program without significant loss of performance.
+\end{enumerate}
+
+In addition to Python, I have worked with C, C++, Fortran (legacy Fortran 77
+and modern Fortran 90+), and Go.  I am a vim, git, and \LaTeX user and am at
+home with the command-line.
+
+
+\section*{Scientific Computing Community Advocate}
+\sectionline
+I am an advocate for computing competency in the sciences.  While in graduate
+school, I helped found The Hacker Within, a peer learning group for scientific
+computing and open source tools.  Additionally, I teach scientists software
+development skills as an instructor with  Software Carpentry.
+
+I am an active member of the Python scientific computing community.   As a
+member of the program committee, I helped set the program for the Scientific
+Computing in Python conference.  I am a member of the UC-Berkely py4science
+community and a member of NumFocus, a Python oriented scientific
+computing advocacy organization.
+
+
+%\section*{Other}
+%\sectionline
+%Self motivated and a problem solver.  LDRD\@.  I work best within a community 
+
+\pagebreak
 
 \section*{Publications}
 \hrule
 \vspace{0.05in}
 
-% Referreed papers
+% papers
 \nociteref{Terry2012b}
+\nociteref{Koning2011}
+\nociteref{Barnard2013}
+\nociteref{Terry2010}
 \nociteref{Stacey2005}
-
-% Referreed proceedings
-\nociterefproc{Koning2011}
 
 % Invited Talks
 \nociteinvtalk{Terry2012a}
 \nociteinvtalk{Terry2013_usf}
 
-% Thesis
-\nocitethesis{Terry2010}
-
-% Conference Proceedings
-\nociteproc{Terry2012}
-\nociteproc{Terry2011}
-\nociteproc{Terry2010a}
-% OLUG
-\nociteproc{Terry2009}
-\nociteproc{Terry2004}
-
 
 \bibliographystyleref{plainyr-rev}
 \bibliographyref{/Users/terry10/doc/latex_files/library}
 
-\bibliographystylerefproc{plainyr-rev}
-\bibliographyrefproc{/Users/terry10/doc/latex_files/library}
-
 \bibliographystyleinvtalk{plainyr-rev}
 \bibliographyinvtalk{/Users/terry10/doc/latex_files/library}
-
-\bibliographystylethesis{plainyr-rev}
-\bibliographythesis{/Users/terry10/doc/latex_files/library}
-
-\bibliographystyleproc{plainyr-rev}
-\bibliographyproc{/Users/terry10/doc/latex_files/library}
-
-
-\section*{Technical Experience}
-\hrule
-\vspace{0.05in}
-
-\subsection*{Post-Doctoral Research}
-My post-doctoral research has focused on understanding the physics of objects
-subjected to extremely high power ($10^{14}$ W), high intensity ($10^{15}
-\text{W}/\text{cm}^2$) laser and particle beams.  My research in the field of
-high energy density physics has focused on two broad topics: design of inertial
-confinement fusion (ICF) targets and design and analysis of materials science
-experiments involving metals at high pressure ($100 - 5000$ kBar).
-
-My fusion efforts have all occurred in the field of inertial confinement fusion
-(ICF), a potential means of energy production that uses micro-explosions to
-produce conditions with densities 100,000 times solid density and temperatures
-in excess of $10^8$ K.  With L. J. Perkins and S. Sepke of AX Division, I developed a shock
-ignition target compatible with ``day one'' hardware on the recently completed
-National Ignition Facility (NIF) in Livermore, CA\@.  The design includes an
-assessment of energetics, polar drive efficiency, hydrodynamic stability, and
-performance degradation due to experimental jitter and hot electrons.  This
-research resulted in the Physics of Plasmas paper ``Design of a DT-Ablator
-Shock Ignition Target for
-the National Ignition Facility.''
-
-Working with the Heavy Ion Fusion Virtual National Laboratory and LLNL's Fusion
-Energy Program, I developed heavy ion driven ICF concept. It uses directly
-incident ion beams on a spherical target to drive an ICF implosion.  This
-design makes use of the deep, spatially peaked deposition of heavy ion beams
-combined with the tamping effect of the material upstream.  For the
-acceleration
-stage, the drive transitions to radiation driven ablation, with the tamper
-material now acting as a spherical hohlraum.  A paper describing the design,
-including an assessment of the hydrodynamic stability, is in preparation.  
-
-In conjunction with my target design work, I have developed an automated shock
-tuner for ICF implosion simulation.  A ICF target design requires launching a
-sequence of shocks such that they merge within a limited time/space window.
-Tuning the shock launch times is tedious and time consuming.  To assist my
-target design work, developed optimization techniques that enable the
-unsupervised tuning of these parameters.  Tuning work that used to occupy days
-of attention can be completely automated and completed in hours.
-
-Over the past 6 months, I have worked with the LLNL B-Division Low Temperature
-Material Strength group on designing and fielding a broad range of experiments on the National
-Ignition Facility (NIF), and Omega (Rochester, NY).
-These include:
-\begin{itemize}
-	\item development of a bright 22 keV photon source (High Energy BackLighter
-		``HEBL'') to be used for radiography in NIF material strength experiments
-		of tantalum
-	\item experiments on Omega using Laue diffraction to measure of the
-		crystalline structure of thin (5 micron) tantalum foils subjected
-		to 300 kBar shocks
-\end{itemize}
-
-
-\subsection*{Ph.D. Research}
-My Ph.D. research studied the effect of different charged particle stopping
-power models on the performance of inertial confinement fusion (ICF) targets.
-Much work went into the development of a library (``Deeks'') that implements
-many different models and does extensive consistency checking between the model
-and the conditions to which it is applied.  This library has been integrated
-into the pre-existing time dependent charged particle tracking (a Monte
-Carlo-like transport scheme) package in an existing multi-physics code
-(``Bucky'').  The integration allows me to examine the effect of different
-transport models in integrated realistic simulations.
-
-\vspace{0.1in}
-
-More specifically, my research involves studying the effect collision operators have on transport properties of the plasma.  Due to the particularly high densities of ICF plasmas, this requires a careful, combined treatment of both the collisional and dielectric properties of the plasma, that is use of so-called ``convergent'' kinetic theories.  I have implemented stopping power models by 
-Landau; 
-Spitzer; 
-Jackson; 
-Brysk; 
-Skupsky; 
-Kihara and Aono; 
-May and Cramer; 
-Li and Petrasso; 
-and 
-Brown, Preston, and Singleton%
-.
-In my own research, I have derived and implemented Fermi-degenerate extensions of the Landau and Li and Petrasso models.  I am currently composing papers for publication on my Fermi-degenerate extension work and another on my analysis of the applicability of existing stopping power models in ICF ignition experiments.  
-
-
-\subsection*{Software Development}
-Over the course of my research, I have developed a significant amount of
-scientific software.  I am a skilled Python developer, with 8 years of
-experience with NumPy, SciPy, Matplotlib, Cython, PyTables, etc.  I am
-proficient in Fortran, C, C++, and Go and have experience working in parallel
-environments.  I am a vim, git, and \LaTeX user and am at home with the
-command-line.
-
-The computing aspect of my Ph.D. research required the integration of a library
-written in C++ (Deeks) with an existing Fortran program (Bucky).  Data analysis
-in compiled languages is overly time intensive, so I developed Python
-interfaces to both codes.  The flexibility provided by the Python interface
-enabled the rapid development of an automatic shock tuner for Bucky.  The tuner
-completely automates a previously labor and analysis intensive process.  What
-once took a week, can now be accomplished in hours.
-
-\subsection*{Undergraduate Research at LLNL}
-\begin{itemize}
-	\item Summers 2003, 2004 - Worked with Ogden Jones on the analysis of ICF thinshell symmetry experiments using view-factor codes and radiation hydrodynamics code Hydra.
-	\item Summer 2002 -  Worked with Dmitri Ryutov on magnetic islands in SSPX
-\end{itemize}
-
-\subsection*{Professional Societies and Affiliations}
-\begin{itemize}
-	\item The American Physical Society
-	\item Software Carpentry
-	\item The Hacker Within
-	\item Scientific Computing in Python Conference
-\end{itemize}
-
-\pagebreak
-
-\section*{Technical Leadership and Teaching}
-\hrule
-\vspace{0.05in}
-\subsection*{Grant and Propsal Writing}
-I am the LLNL Primary Investigator for a 3-year, \$6M proposal the US DoE
-Office of Science to.  The proposal seeks funding to  experimentally investigate
-the physics of shock reflection and the evolution of the Kelvin-Helmholtz
-instability in conditions relevant to an ion driven fusion energy target
-design.  If funded, I would be responsible for directing as \$1.1M in funds
-over three years and managing a group of senior research scientists.  The
-proposal is in collaboration with scientists at Lawrence Berkeley National
-Laboratory, Lawrence Livermore National Laboratory, and the Princeton Plasma
-Physics Laboratory.
-
-\subsection*{Scientific Programming in Python Program Committee 2012-2013}
-The Program Committee for the Scientific Programming in Python Conference is
-responsible for reviewing and selecting talks from submitted proposals.
-Committee is also responsible for reviewing submitted papers submitted to the
-conference proceedings.
-
-\subsection*{The Hacker Within}
-The Hacker Within (THW) is a student-led, skill sharing interest group for
-scientific software development.  It was founded in 2008 by two colleagues and
-myself.  THW holds regular meetings organized around discussion of software
-development.  I personally contributed talks on build systems (CMake), version
-control (Subversion, Mercurial), text editors (VIM), and many Python-related
-topics.
-
-\vspace{0.1in}
-
-THW also hosts occasional highly focused multi-day ``boot camp'' workshops. I
-helped organize and teach boot camps on Unix literacy, C++, and Python in 2008,
-2009, and 2010.  The Python boot camp, in particular, had more than 70 attendees
-from 20 departments and included more than 18 hours of instruction.  In
-addition to organization, I was responsible for teaching the sessions
-``Modules, Scripts, Packages and Classes,''  ``Graphing with MatPlotLib,''
-``Extending Python with C/C++ using SWIG,''  and ``Batteries Included - The
-Python Standard Library.''
-
-\subsection*{Software Carpentry}
-Software Carpentry seeks to make scientists more effective by teaching them
-basic computing skills.  They have adopted the THW-style boot camp teaching
-methodology and have, over the past two years, taught over 50 workshops in the
-US, Canada, and Europe.  I have assisted with several Software Carpentry
-workshops at UC-Berkeley and Lawrence Berkeley Laboratory.  I am currently
-participating in a Software Carpentry instructor training course covering the
-academic literature on effective software development practice and techniques
-for effective computing instruction.
-
-\subsection*{Engineering Problem Solving}
-At the University of Wisconsin-Madison, I was a Teaching Assistant for NE 271:
-Engineering Problem Solving.  This laboratory course covers the solution of engineering
-problems using commercially-available software tools (spreadsheets, symbolic
-manipulators, and equation solvers). The emphasis of the course is on nuclear
-engineering problems, including radioactive decay, nuclear cross sections,
-scattering, and criticality.  In this freshmen-level class, I was responsible
-for guiding the in-class exercises as well as real-time debugging of students'
-programming errors and computing misconceptions.
-
-\section*{Community Leadership}
-\hrule
-\vspace{0.05in}
-\subsection*{The Journey Community Church Council}
-From 2009-2010, I was been one of 5 members of The Journey Community's Church
-Council.  Members of the council, are responsible for overseeing the church's
-finances.  They are responsible for setting the  budget for the church and
-making financial decisions for the church.  Additionally, they oversee the
-finances of \href{http://www.beautifulchild.org}{Beautiful Child}, a charity
-that sponsors an orphanage in Jacmel, Haiti.
-
-\subsection*{Jumptown}
-From 2002-2004 I was president of a swing dancing club.  I was responsible for
-organizing weekly classes, monthly dances and semesterly workshops.  Under my
-supervision the club grew from about 20 people to more than 100 and oversaw a
-budget of several thousand dollars.
-
-\section*{Awards}
-\hrule
-\vspace{0.05in}
-\begin{itemize}
-	\item National Physical Sciences Consortium Fellowship in conjunction with Sandia National Laboratories 2007-2010
-	\item James Poukey Fellowship 2006
-	\item National Academy for Nuclear Training Scholarship 2002-2004
-	\item American Nuclear Society Scholarship 2002-2003
-\end{itemize}
-
-\bigskip
 
 \end{document}
