@@ -1,7 +1,9 @@
 TARGET=cv
 TEX=pdflatex
 
-all:
+all: cv cover
+
+cv:
 	${TEX} ${TARGET}.tex
 	for file in *.aux ; do \
 		bibtex $$file ; \
@@ -9,6 +11,12 @@ all:
 	while (${TEX} ${TARGET} ; \
 		grep -q "Rerun to get cross" ${TARGET}.log ) do true ; \
 	done
+
+cover:
+	${TEX} cover.tex
+	${TEX} cover.tex
+	${TEX} cover.tex
+
 
 clean:
 	rm *.aux
